@@ -1,3 +1,10 @@
+@media only screen and (max-aspect-ratio: 16/9) {
+    .sidebar {
+        display: hidden;
+        width: 0px;
+    }
+}
+
 .profile {
     position: relative;
 }
@@ -16,7 +23,6 @@
 .profile .front-profile .image-profile {
     width: 100%; 
     height: 100%;
-    border: 1px solid red;
     position: relative;
     bottom: 50%;
 }
@@ -38,3 +44,4 @@
 .front-profile h4 {
     font-size: large;
 }
+
