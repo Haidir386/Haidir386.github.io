@@ -55,11 +55,6 @@ function add_industry_talk_info( data ) {
         content.style.backgroundSize = lists_event[i].size + "%";
         it_lists.appendChild( content );
     }
-
-    // <div class="it-list-item-content">
-    //                         <h3 class="text-center">Creative Thinking Program</h3>
-    //                         <p> Description here </p>
-    //                     </div>
 }
 
 onInit();
