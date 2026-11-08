@@ -234,7 +234,6 @@ body {
     padding-bottom: 5px;
     width: 90%;
     height: 250px;
-    background: red;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -243,11 +242,9 @@ body {
     border-radius: 50px;
 
     /* Edit by user */
-    background: url("https://media.licdn.com/dms/image/v2/D5622AQEoSlvcu5zeAQ/feedshare-shrink_800/B56aG6.b.WGgAg-/0/1794138292349?e=1795651200&v=beta&t=_3Bhu8Rf5h5wAm6QTzNSj0CoV-E9l88P-yYnKrKvS5A") fixed;
     background-clip: border-box;
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-position: 75% 20%;
     background-size: 100%;
 }
 
