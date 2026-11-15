@@ -50,9 +50,9 @@ function add_industry_talk_info( data ) {
                 <p> ${lists_event[i].description} </p>
             </div>`;
         content.style.background = `url("${lists_event[i].thumbnails}") fixed`;
-        content.style.backgroundPositionX = lists_event[i].position.x + "%";
-        content.style.backgroundPositionY = lists_event[i].position.y + "%";
-        content.style.backgroundSize = lists_event[i].size + "%";
+        content.addEventListener("click", e => {
+            location.href = lists_event[i]["link-page"];
+        })
         it_lists.appendChild( content );
     }
 }

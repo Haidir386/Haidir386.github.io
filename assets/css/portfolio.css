@@ -224,28 +224,35 @@ body {
     width: 100%;
     min-height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    
+    justify-content: center;
 }
 
 .industry-talk-list .it-list-item {
-    margin: 0;
+    margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 90%;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
     border-radius: 50px;
 
     /* Edit by user */
+    background: gray;
     background-clip: border-box;
     background-repeat: no-repeat;
     background-origin: content-box;
     background-size: 100%;
+}
+
+.industry-talk-list .it-list-item:hover {
+    border: 2px solid #C9D1D9;
+    animation: it_list_item_hover_in_keyframe 0.5s ease-in;
 }
 
 .industry-talk-list .it-list-item .it-list-item-content {
@@ -256,6 +263,9 @@ body {
     bottom: 0;
     display: flex;
     flex-direction: row;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .industry-talk-list .it-list-item .it-list-item-content h3 {
@@ -271,5 +281,33 @@ body {
 
     .content {
         width: 100%;
+    }
+}
+
+/* Animation and Keyframe */
+@keyframes it_list_item_hover_in_keyframe {
+    0% {
+        border: 0px solid black;
+    }
+    100% {
+        border: 2px solid #C9D1D9;
+    }
+}
+
+@keyframes it_list_item_hover_animate_keyframe {
+    0% {
+        border: 2px solid #10B981;
+    }
+    25% {
+        border: 2px solid #11d493;
+    }
+    50% {
+        border: 2px solid #0ff0a5;
+    }
+    75% {
+        border: 2px solid #11d493;
+    }
+    100% {
+        border: 2px solid #10B981;
     }
 }

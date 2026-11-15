@@ -1,0 +1,137 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #0D1117;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar-base {
+    width: 100%;
+    display: sticky;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(13, 17, 23, 0.85);
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.navbar .navbar-brand {
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    color: #F0F6FC;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    align-items: center; 
+    justify-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-side-button {
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    right: 10px;
+}
+
+.navbar .navbar-side-button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: large;
+    border-radius: 30px;
+    background-color: #10B981;
+    color: #0D1117;
+}
+
+.navbar .drawer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 50%;
+    background: #161B22;
+    border-left: 1px solid #21262D;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.navbar .drawer .cancel-button {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar .drawer .cancel-button .side-cancel {
+    position: relative;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    color: #C9D1D9;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.navbar .drawer ul {
+    list-style-type: none;
+}
+
+.navbar .drawer ul li {
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+    top: 50px;
+    color: #C9D1D9;
+    border-radius: 30px;
+}
+
+.navbar .drawer ul li:hover {
+    position: relative;
+    right: 30px;
+    background-color: #1F242C;
+    color: #F0F6FC;
+    animation: 1s drawer_li_hover ease-in;
+}
+
+/* Content */
+.content {
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: #161B22;
+    color: #F0F6FC;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    overflow-y: scroll;
+}
